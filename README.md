@@ -93,6 +93,8 @@ Other formats use `SimpleStyle(dark, background)`, for example `rememberBarcodeP
 
 ### Export images
 
+These extensions come from `kmp-barcodes`, not `kmp-barcodes-core`.
+
 ```kotlin
 import com.mukeshsolanki.barcodes.ImageFormat
 import com.mukeshsolanki.barcodes.toByteArray
@@ -105,7 +107,17 @@ val exact = BarcodeEncoder.encode("https://example.com", BarcodeFormat.QrCode, 5
 val bitmap = exact.toImageBitmap()              // one matrix cell = one pixel
 ```
 
-On Android, `BarcodeMatrix.toBitmap()` returns an `android.graphics.Bitmap`.
+On Android, `kmp-barcodes` also adds `BarcodeMatrix.toBitmap()`, which returns an `android.graphics.Bitmap`.
+
+With only `kmp-barcodes-core`, turn the matrix into pixels yourself. The result is still pixel-exact:
+
+```kotlin
+val matrix = BarcodeEncoder.encode(content, BarcodeFormat.QrCode, 512, 512, QrOptions(quietZone = 1))
+val pixels = IntArray(matrix.width * matrix.height) { i ->
+    if (matrix[i % matrix.width, i / matrix.width]) Color.BLACK else Color.WHITE
+}
+val bitmap = Bitmap.createBitmap(pixels, matrix.width, matrix.height, Bitmap.Config.ARGB_8888)
+```
 
 ### Payloads
 
