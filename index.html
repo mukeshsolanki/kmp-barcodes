@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>kmp-barcodes integration guide</title>
+<meta name="description" content="Generate and scan QR codes and barcodes in Android, iOS, Kotlin Multiplatform and Compose Multiplatform apps.">
+<style>
+  :root {
+    color-scheme: light dark;
+    --paper: #eef4f3;
+    --ink: #123239;
+    --muted: #47636a;
+    --line: #b9cfcf;
+    --grid: #c9dcdb;
+    --link: #0b6472;
+    --code-bg: #dfeaea;
+    --warn: #8a4b08;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #0d262d;
+      --ink: #e4efee;
+      --muted: #a3bcbd;
+      --line: #2f5059;
+      --grid: #1b3b44;
+      --link: #7fd0da;
+      --code-bg: #143139;
+      --warn: #f0b878;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font: 1.0625rem/1.65 "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  }
+  a { color: var(--link); text-underline-offset: 0.15em; }
+  a:focus-visible, pre:focus-visible { outline: 3px solid var(--link); outline-offset: 2px; }
+  .wrap { max-width: 44rem; margin: 0 auto; padding: 0 16px; }
+  header {
+    border-bottom: 1px solid var(--line);
+    background-color: var(--paper);
+    background-image:
+      linear-gradient(var(--grid) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+    background-size: 4rem 4rem;
+    background-position: center top;
+    padding: 4.5rem 0 3.5rem;
+  }
+  h1 {
+    margin: 0 0 1.25rem;
+    font-size: clamp(2.25rem, 8vw, 3.75rem);
+    line-height: 1.08;
+    font-weight: 400;
+    letter-spacing: -0.015em;
+  }
+  .lede { margin: 0 0 0.5rem; font-size: 1.1875rem; max-width: 36rem; }
+  .release { margin: 0; color: var(--muted); }
+  main { padding: 1rem 0 3rem; }
+  h2 { margin: 3rem 0 0.75rem; font-size: 1.75rem; line-height: 1.2; font-weight: 400; }
+  h3 { margin: 2rem 0 0.5rem; font-size: 1.1875rem; line-height: 1.3; }
+  p, ul { margin: 0 0 1rem; }
+  li { margin-bottom: 0.35rem; }
+  code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+  code { font-size: 0.875em; overflow-wrap: anywhere; }
+  pre {
+    margin: 0 0 1.25rem;
+    padding: 1rem;
+    overflow-x: auto;
+    background: var(--code-bg);
+    border-left: 3px solid var(--line);
+    font-size: 0.875rem;
+    line-height: 1.55;
+  }
+  pre code { font-size: inherit; overflow-wrap: normal; }
+  .warn { color: var(--warn); }
+  blockquote { margin: 0 0 1rem; padding-left: 1rem; border-left: 3px solid var(--line); font-style: italic; }
+  footer { border-top: 1px solid var(--line); padding: 1.5rem 0 2.5rem; color: var(--muted); }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>Generate and scan barcodes, with no network call</h1>
+    <p class="lede">A barcode library for Android, iOS, Kotlin Multiplatform and Compose Multiplatform, built on a pure Kotlin port of ZXing 3.5.3. QR Code, Data Matrix, Aztec, PDF417 and the common 1D formats.</p>
+    <p class="release">Latest release: <strong>0.1.0</strong></p>
+  </div>
+</header>
+
+<main class="wrap">
+  <h2>Choose a library</h2>
+  <ul>
+    <li><code>kmp-barcodes-core</code> to encode, decode still images and build payloads, with no Compose.</li>
+    <li><code>kmp-barcodes</code> for Compose painters and image export. It includes <code>kmp-barcodes-core</code>.</li>
+    <li><code>kmp-barcodes-scanner</code> for the Compose camera scanner. It includes <code>kmp-barcodes-core</code>.</li>
+  </ul>
+
+  <h2>Install</h2>
+
+  <h3>Android, KMP and Compose Multiplatform</h3>
+  <p>Add the Maven repository to your settings file:</p>
+  <pre tabindex="0" aria-label="settings.gradle.kts"><code>// settings.gradle.kts
+dependencyResolutionManagement {
+    repositories {
+        maven("https://mukeshsolanki.github.io/kmp-barcodes")
+    }
+}</code></pre>
+  <p>Then add the dependencies you need:</p>
+  <pre tabindex="0" aria-label="build.gradle.kts"><code>// build.gradle.kts
+implementation("com.mukeshsolanki.barcodes:kmp-barcodes:0.1.0")         // generation, includes core
+implementation("com.mukeshsolanki.barcodes:kmp-barcodes-scanner:0.1.0") // camera scanner, includes core</code></pre>
+  <p>Requirements:</p>
+  <ul>
+    <li><strong>Android:</strong> <code>minSdk</code> 24.</li>
+    <li><strong>iOS:</strong> iOS 15 and Kotlin 2.4 or newer.</li>
+    <li><strong>Compose:</strong> built with Kotlin 2.4.21 and Compose Multiplatform 1.12.2.</li>
+  </ul>
+
+  <h3>Swift (Swift Package Manager)</h3>
+  <p>Add this package, then choose <strong>one</strong> product:</p>
+  <pre tabindex="0" aria-label="Package URL"><code>https://github.com/mukeshsolanki/kmp-barcodes</code></pre>
+  <ul>
+    <li><code>KmpBarcodes</code>: generation, plus core.</li>
+    <li><code>KmpBarcodesScanner</code>: the camera scanner, plus core.</li>
+  </ul>
+  <p class="warn">Each XCFramework embeds its own copy of core. Don't link both, because each would have its own incompatible <code>Barcode</code> type.</p>
+  <p>iOS simulators on Intel Macs aren't supported.</p>
+
+  <h2>Usage</h2>
+  <pre tabindex="0" aria-label="Generate a QR code"><code>import com.mukeshsolanki.barcodes.PixelShape
+import com.mukeshsolanki.barcodes.QrStyle
+import com.mukeshsolanki.barcodes.rememberBarcodePainter
+
+val painter = rememberBarcodePainter(
+    content = "https://example.com",
+    style = QrStyle(darkPixel = PixelShape.Circle),
+)
+Image(painter, contentDescription = "QR code")</code></pre>
+  <pre tabindex="0" aria-label="Scan with the camera"><code>import com.mukeshsolanki.barcodes.BarcodeFormat
+import com.mukeshsolanki.barcodes.BarcodeScanner
+import com.mukeshsolanki.barcodes.rememberScannerState
+
+val state = rememberScannerState()
+BarcodeScanner(
+    state = state,
+    formats = setOf(BarcodeFormat.QrCode),
+    onResult = { barcode -> println(barcode.text) },
+)</code></pre>
+  <pre tabindex="0" aria-label="Scan an image"><code>import com.mukeshsolanki.barcodes.scanImage
+
+val barcode = scanImage(bytes) // null when nothing reads</code></pre>
+
+  <h2>Camera permission</h2>
+  <p>The library never requests permission. Request camera access in your app before showing the scanner, and declare it:</p>
+  <pre tabindex="0" aria-label="AndroidManifest.xml"><code>&lt;uses-permission android:name="android.permission.CAMERA"/&gt;
+&lt;uses-feature android:name="android.hardware.camera" android:required="false"/&gt;</code></pre>
+  <p>On iOS, add <code>NSCameraUsageDescription</code> to <code>Info.plist</code>.</p>
+
+  <h2>License</h2>
+  <p>Apache-2.0. The library contains code ported from <a href="https://github.com/zxing/zxing">ZXing</a>, Copyright ZXing authors, also Apache-2.0. Keep the <a href="https://github.com/mukeshsolanki/kmp-barcodes/blob/main/NOTICE">NOTICE</a> file with anything you redistribute. It's also attached to each <a href="https://github.com/mukeshsolanki/kmp-barcodes/releases">GitHub release</a> in <code>licenses.zip</code>.</p>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Read the <a href="https://github.com/mukeshsolanki/kmp-barcodes#readme">README</a> for every option, image export and the scanner's behaviour. No network calls, no logging.</p>
+  </div>
+</footer>
+</body>
+</html>

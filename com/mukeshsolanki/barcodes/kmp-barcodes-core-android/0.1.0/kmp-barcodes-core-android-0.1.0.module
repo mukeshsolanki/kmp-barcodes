@@ -1,0 +1,109 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../kmp-barcodes-core/0.1.0/kmp-barcodes-core-0.1.0.module",
+    "group": "com.mukeshsolanki.barcodes",
+    "module": "kmp-barcodes-core",
+    "version": "0.1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.8.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "androidApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kmp-barcodes-core.aar",
+          "url": "kmp-barcodes-core-android-0.1.0.aar",
+          "size": 761518,
+          "sha512": "4b4365463723e2e17025e70a4b577dc25e25cc1baa109984cfeb472efb8fc7f4257636d8535d22c44a37f281dc97e4c47987fa6230d41607e31fae253f671798",
+          "sha256": "e7c72a357e873ac0c255d8e6d03e90ac3a5b4b12b72902c2cda819772dd532fb",
+          "sha1": "7900f1edfe065b54709bea0f8d12d66dc620c52b",
+          "md5": "b88cbaa5bbe675f77776223ca551b51c"
+        }
+      ]
+    },
+    {
+      "name": "androidRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.21"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.2"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kmp-barcodes-core.aar",
+          "url": "kmp-barcodes-core-android-0.1.0.aar",
+          "size": 761518,
+          "sha512": "4b4365463723e2e17025e70a4b577dc25e25cc1baa109984cfeb472efb8fc7f4257636d8535d22c44a37f281dc97e4c47987fa6230d41607e31fae253f671798",
+          "sha256": "e7c72a357e873ac0c255d8e6d03e90ac3a5b4b12b72902c2cda819772dd532fb",
+          "sha1": "7900f1edfe065b54709bea0f8d12d66dc620c52b",
+          "md5": "b88cbaa5bbe675f77776223ca551b51c"
+        }
+      ]
+    },
+    {
+      "name": "androidSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "files": [
+        {
+          "name": "kmp-barcodes-core-android-0.1.0-sources.jar",
+          "url": "kmp-barcodes-core-android-0.1.0-sources.jar",
+          "size": 391480,
+          "sha512": "b1f4c127a8bcc4e0616f98579c3dc925c7c47f58ff799df349f2659e213d37dd45ae041873c07662df0e49f2bc1d47ffa09befbc859adc4f1bb4b1630fb43c50",
+          "sha256": "fcf9b63d73f8a07f83c7cdba74b31379d650653f99fc4a86bb0e58eb8d283872",
+          "sha1": "ca22d7c092ffea0f6b676bf2907685acd249e465",
+          "md5": "91ac430986bc22a8a961f2901d3827f5"
+        }
+      ]
+    }
+  ]
+}

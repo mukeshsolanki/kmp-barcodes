@@ -1,0 +1,239 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../kmp-barcodes/0.1.0/kmp-barcodes-0.1.0.module",
+    "group": "com.mukeshsolanki.barcodes",
+    "module": "kmp-barcodes",
+    "version": "0.1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.8.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "iosSimulatorArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "com.mukeshsolanki.barcodes",
+          "module": "kmp-barcodes-core",
+          "version": {
+            "requires": "0.1.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.21"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.runtime",
+          "module": "runtime",
+          "version": {
+            "requires": "1.12.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.ui",
+          "module": "ui",
+          "version": {
+            "requires": "1.12.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.foundation",
+          "module": "foundation",
+          "version": {
+            "requires": "1.12.2"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kmp-barcodes-iosSimulatorArm64Main-0.1.0.klib",
+          "url": "kmp-barcodes-iossimulatorarm64-0.1.0.klib",
+          "size": 85994,
+          "sha512": "8448d97703d461d4586bbb3c26442c22f4b77bdab03b135bd33ed9272fcf29c7736bce3d34636b3d383a2b7f4ce53c109557e26b2f3bca6028b90b9f11cff620",
+          "sha256": "05f050e9b98f674c67576e578cc40260c8a1e834595da68b6edad08a7fac3b1a",
+          "sha1": "fe09bde6ad6ca64844bcddf4aa1749fd9b528fd7",
+          "md5": "2cde41a5a708b8ab7b4e6d90757e04a9"
+        }
+      ]
+    },
+    {
+      "name": "iosSimulatorArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "files": [
+        {
+          "name": "kmp-barcodes-iossimulatorarm64-0.1.0-sources.jar",
+          "url": "kmp-barcodes-iossimulatorarm64-0.1.0-sources.jar",
+          "size": 15540,
+          "sha512": "d6f28ba4fb494d80a53e095356927e20b00036b0568703fde40b112ee0c71fd288f963e0e63e001d9a4daf26e4b5bcb7dee53cf24cdf2fa742e6be74e2a516fc",
+          "sha256": "78132dbade3c48c7f57936a8999fde59451571416305d33ea88f67a480fac7c1",
+          "sha1": "2b9331d791d61275279abc3519b40e9290813382",
+          "md5": "0a2cd3e6a170d296bd89af7f42547bbb"
+        }
+      ]
+    },
+    {
+      "name": "iosSimulatorArm64ResourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.libraryelements": "kotlin-multiplatformresources",
+        "org.gradle.usage": "kotlin-multiplatformresources",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "com.mukeshsolanki.barcodes",
+          "module": "kmp-barcodes-core",
+          "version": {
+            "requires": "0.1.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.21"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.runtime",
+          "module": "runtime",
+          "version": {
+            "requires": "1.12.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.ui",
+          "module": "ui",
+          "version": {
+            "requires": "1.12.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.foundation",
+          "module": "foundation",
+          "version": {
+            "requires": "1.12.2"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kmp-barcodes-0.1.0.kotlin_resources.zip",
+          "url": "kmp-barcodes-iossimulatorarm64-0.1.0-kotlin_resources.kotlin_resources.zip",
+          "size": 366,
+          "sha512": "2d79a042f5e3122f39ba892e32e9c4c357f7e4283c63d4b58687fb939c92ace950cdf495da49fb834b268de5972727bea4b0862b1dc186ec1174453dd41b5721",
+          "sha256": "54fcc24d2801a5d5d61343c41f1c0b72af57e519ee4d2cbb9264b1df2007cc7e",
+          "sha1": "ba98e81be4c0a603863a10b622daa22838f9802a",
+          "md5": "cc2895e7b0a144b81fb2d27877e65ce7"
+        }
+      ]
+    },
+    {
+      "name": "iosSimulatorArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "com.mukeshsolanki.barcodes",
+          "module": "kmp-barcodes-core",
+          "version": {
+            "requires": "0.1.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.21"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.runtime",
+          "module": "runtime",
+          "version": {
+            "requires": "1.12.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.ui",
+          "module": "ui",
+          "version": {
+            "requires": "1.12.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.foundation",
+          "module": "foundation",
+          "version": {
+            "requires": "1.12.2"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kmp-barcodes-iossimulatorarm64-0.1.0-metadata.jar",
+          "url": "kmp-barcodes-iossimulatorarm64-0.1.0-metadata.jar",
+          "size": 2842,
+          "sha512": "ef82a1953ffaf4e02ea8852c99623fbdee13de8be13669d5f80af0a09cf1e3020faabd5b97d241bcce7d840f3eaecef17fe443b4b142a75be4e1566c89925474",
+          "sha256": "e77bba609b5d3fb3b932f932028655325bf3394620f667d27bc3bed836c009df",
+          "sha1": "593efe29e47dc412cc4d6f8c95cc79978c74fa55",
+          "md5": "25afed581b099772f3cf0aea9914b4d0"
+        }
+      ]
+    }
+  ]
+}

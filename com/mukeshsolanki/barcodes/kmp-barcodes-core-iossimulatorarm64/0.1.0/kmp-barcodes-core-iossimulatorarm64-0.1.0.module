@@ -1,0 +1,116 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../kmp-barcodes-core/0.1.0/kmp-barcodes-core-0.1.0.module",
+    "group": "com.mukeshsolanki.barcodes",
+    "module": "kmp-barcodes-core",
+    "version": "0.1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.8.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "iosSimulatorArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.21"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.2"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kmp-barcodes-core-iosSimulatorArm64Main-0.1.0.klib",
+          "url": "kmp-barcodes-core-iossimulatorarm64-0.1.0.klib",
+          "size": 1069296,
+          "sha512": "0167ef8919a02195b1cb66ffb6aa4f3c200cd2aab4df7c07dee66e0f9a13d6f895e8bbe8a7cbe489459c5a0c75cc4cd4c9aeb2e8d5157b5ed66d8ef753aae09f",
+          "sha256": "baaf5524245948ec341716f67c3f9bfc1a28d267f69e5e61bc58d3acbc92fbba",
+          "sha1": "51059066f3bdcdb2e3ffab385d2f76a50428ac57",
+          "md5": "4a8fa4da703516999363c8a26c757f17"
+        }
+      ]
+    },
+    {
+      "name": "iosSimulatorArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "files": [
+        {
+          "name": "kmp-barcodes-core-iossimulatorarm64-0.1.0-sources.jar",
+          "url": "kmp-barcodes-core-iossimulatorarm64-0.1.0-sources.jar",
+          "size": 391006,
+          "sha512": "1385fa661a3d82b8b1288fdc2d30b630bd919e2eab94c81a2f6fa2e59104253882c0f1583f39f101dbcaa7f4541f8c2f4723bcecb5ba9a2b26e670842be8f84a",
+          "sha256": "91e26a67ca3dcfad23da1a4600aae82a172abc04eb061b5d2db140bd33069dd3",
+          "sha1": "390d194d47ca0d3f447825b317021e7d3bd0a03e",
+          "md5": "31e41d89d58bdb2ccbead392a9029209"
+        }
+      ]
+    },
+    {
+      "name": "iosSimulatorArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.21"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.2"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kmp-barcodes-core-iossimulatorarm64-0.1.0-metadata.jar",
+          "url": "kmp-barcodes-core-iossimulatorarm64-0.1.0-metadata.jar",
+          "size": 2789,
+          "sha512": "06348504950b52db62977e99ec03547b4d60d0726e91ebb8dcd12bc17c1f14deed0f8941d0319c869fc46078ae0cfc2ae7237212aad99be180ef10b2b7ebbf35",
+          "sha256": "95dcd181ce2ac59cac6ee0cf80b0e2df9e37fe28bf9c86c6e944bae0df44b77a",
+          "sha1": "11d4a389411a8c9fb7fa027a257cdbc96743c07f",
+          "md5": "da32a1ce216ed448bccac9bf5e56a182"
+        }
+      ]
+    }
+  ]
+}

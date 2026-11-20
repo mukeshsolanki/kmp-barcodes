@@ -1,0 +1,297 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.mukeshsolanki.barcodes",
+    "module": "kmp-barcodes-scanner",
+    "version": "0.1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.8.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "metadataApiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "dependencies": [
+        {
+          "group": "com.mukeshsolanki.barcodes",
+          "module": "kmp-barcodes-core",
+          "version": {
+            "requires": "0.1.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.21"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.runtime",
+          "module": "runtime",
+          "version": {
+            "requires": "1.12.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.ui",
+          "module": "ui",
+          "version": {
+            "requires": "1.12.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.compose.foundation",
+          "module": "foundation",
+          "version": {
+            "requires": "1.12.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.androidx.lifecycle",
+          "module": "lifecycle-runtime-compose",
+          "version": {
+            "requires": "2.9.6"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kmp-barcodes-scanner-metadata-0.1.0.jar",
+          "url": "kmp-barcodes-scanner-0.1.0.jar",
+          "size": 5962,
+          "sha512": "0c6003a47ac79ffe64454793d7f56e12c9f3073279d024173ea67977f2eba85ed871d88ae75c5daac2614db74ee46ffc2eef6b771333c69474e17b366894dfb9",
+          "sha256": "69993ae66cabd60683c986e47ee8850d1c45b3d33d6a544ea4d200e5e6f1b493",
+          "sha1": "d2fb6289bb2cac2ddbfab3754a2ef7f987c22c55",
+          "md5": "d4f30c9c268518fef87b1dd2e7f563c8"
+        }
+      ]
+    },
+    {
+      "name": "metadataSourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "files": [
+        {
+          "name": "kmp-barcodes-scanner-kotlin-0.1.0-sources.jar",
+          "url": "kmp-barcodes-scanner-0.1.0-sources.jar",
+          "size": 12180,
+          "sha512": "b54f940834246c9f22880974ca13fb4f982b1795a5748425d473ebfce7435abad07eda1e008e8ff8321a5d58d78653dc59c6762457f319e94f208aa4eba03f9b",
+          "sha256": "aabaf9f61bdd9eb59eb5b76d0b375dc89af2ede2a3bb672ef6383f0412c2c36e",
+          "sha1": "e037f6bf3ee260d8028665527b1d7e990c8f8964",
+          "md5": "5696b3478ab46f9893406a0fffd2183f"
+        }
+      ]
+    },
+    {
+      "name": "androidApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "available-at": {
+        "url": "../../kmp-barcodes-scanner-android/0.1.0/kmp-barcodes-scanner-android-0.1.0.module",
+        "group": "com.mukeshsolanki.barcodes",
+        "module": "kmp-barcodes-scanner-android",
+        "version": "0.1.0"
+      }
+    },
+    {
+      "name": "androidRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "available-at": {
+        "url": "../../kmp-barcodes-scanner-android/0.1.0/kmp-barcodes-scanner-android-0.1.0.module",
+        "group": "com.mukeshsolanki.barcodes",
+        "module": "kmp-barcodes-scanner-android",
+        "version": "0.1.0"
+      }
+    },
+    {
+      "name": "androidSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "available-at": {
+        "url": "../../kmp-barcodes-scanner-android/0.1.0/kmp-barcodes-scanner-android-0.1.0.module",
+        "group": "com.mukeshsolanki.barcodes",
+        "module": "kmp-barcodes-scanner-android",
+        "version": "0.1.0"
+      }
+    },
+    {
+      "name": "iosArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kmp-barcodes-scanner-iosarm64/0.1.0/kmp-barcodes-scanner-iosarm64-0.1.0.module",
+        "group": "com.mukeshsolanki.barcodes",
+        "module": "kmp-barcodes-scanner-iosarm64",
+        "version": "0.1.0"
+      }
+    },
+    {
+      "name": "iosArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kmp-barcodes-scanner-iosarm64/0.1.0/kmp-barcodes-scanner-iosarm64-0.1.0.module",
+        "group": "com.mukeshsolanki.barcodes",
+        "module": "kmp-barcodes-scanner-iosarm64",
+        "version": "0.1.0"
+      }
+    },
+    {
+      "name": "iosArm64ResourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.libraryelements": "kotlin-multiplatformresources",
+        "org.gradle.usage": "kotlin-multiplatformresources",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kmp-barcodes-scanner-iosarm64/0.1.0/kmp-barcodes-scanner-iosarm64-0.1.0.module",
+        "group": "com.mukeshsolanki.barcodes",
+        "module": "kmp-barcodes-scanner-iosarm64",
+        "version": "0.1.0"
+      }
+    },
+    {
+      "name": "iosArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kmp-barcodes-scanner-iosarm64/0.1.0/kmp-barcodes-scanner-iosarm64-0.1.0.module",
+        "group": "com.mukeshsolanki.barcodes",
+        "module": "kmp-barcodes-scanner-iosarm64",
+        "version": "0.1.0"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kmp-barcodes-scanner-iossimulatorarm64/0.1.0/kmp-barcodes-scanner-iossimulatorarm64-0.1.0.module",
+        "group": "com.mukeshsolanki.barcodes",
+        "module": "kmp-barcodes-scanner-iossimulatorarm64",
+        "version": "0.1.0"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kmp-barcodes-scanner-iossimulatorarm64/0.1.0/kmp-barcodes-scanner-iossimulatorarm64-0.1.0.module",
+        "group": "com.mukeshsolanki.barcodes",
+        "module": "kmp-barcodes-scanner-iossimulatorarm64",
+        "version": "0.1.0"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64ResourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.libraryelements": "kotlin-multiplatformresources",
+        "org.gradle.usage": "kotlin-multiplatformresources",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kmp-barcodes-scanner-iossimulatorarm64/0.1.0/kmp-barcodes-scanner-iossimulatorarm64-0.1.0.module",
+        "group": "com.mukeshsolanki.barcodes",
+        "module": "kmp-barcodes-scanner-iossimulatorarm64",
+        "version": "0.1.0"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kmp-barcodes-scanner-iossimulatorarm64/0.1.0/kmp-barcodes-scanner-iossimulatorarm64-0.1.0.module",
+        "group": "com.mukeshsolanki.barcodes",
+        "module": "kmp-barcodes-scanner-iossimulatorarm64",
+        "version": "0.1.0"
+      }
+    }
+  ]
+}

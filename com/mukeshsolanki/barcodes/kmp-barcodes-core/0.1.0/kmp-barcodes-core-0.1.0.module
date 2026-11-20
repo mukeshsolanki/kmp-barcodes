@@ -1,0 +1,226 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.mukeshsolanki.barcodes",
+    "module": "kmp-barcodes-core",
+    "version": "0.1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.8.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "metadataApiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.21"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.2"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kmp-barcodes-core-metadata-0.1.0.jar",
+          "url": "kmp-barcodes-core-0.1.0.jar",
+          "size": 177900,
+          "sha512": "5d03d67f85d5c22b6ce6a17e9142c3d79bf460674d53f593809defa8588b9f28cf1ab98a860aaec11721480427675697184e9c45693460df19f97739a21d4de6",
+          "sha256": "1fe18f585cef00c11fa9e35c76d6046635d57a76cd18fad9b3f70c3e04f2e291",
+          "sha1": "6ef12d98eaa5e3f0d1fadfaf89a11a3c97e83b54",
+          "md5": "09a20fddad1c0f213b11769fd0cbc28e"
+        }
+      ]
+    },
+    {
+      "name": "metadataSourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "files": [
+        {
+          "name": "kmp-barcodes-core-kotlin-0.1.0-sources.jar",
+          "url": "kmp-barcodes-core-0.1.0-sources.jar",
+          "size": 391006,
+          "sha512": "3c92a6790c183457e1d79e418ebe3f09c972491af16db53e48e544f134685e42bf9658191255249a0a05156b7e6a445cb8452fd938b1da740e90ae8d11e81080",
+          "sha256": "137aa2955ae521be27d04e187d91ce8d69943929c95c6cccbb880fa7db0297c8",
+          "sha1": "cfbcf31f33b80d65d4327b7e860149815d46707e",
+          "md5": "1c25b72e37cb91ca213464a57c7e2156"
+        }
+      ]
+    },
+    {
+      "name": "androidApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "available-at": {
+        "url": "../../kmp-barcodes-core-android/0.1.0/kmp-barcodes-core-android-0.1.0.module",
+        "group": "com.mukeshsolanki.barcodes",
+        "module": "kmp-barcodes-core-android",
+        "version": "0.1.0"
+      }
+    },
+    {
+      "name": "androidRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "available-at": {
+        "url": "../../kmp-barcodes-core-android/0.1.0/kmp-barcodes-core-android-0.1.0.module",
+        "group": "com.mukeshsolanki.barcodes",
+        "module": "kmp-barcodes-core-android",
+        "version": "0.1.0"
+      }
+    },
+    {
+      "name": "androidSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "available-at": {
+        "url": "../../kmp-barcodes-core-android/0.1.0/kmp-barcodes-core-android-0.1.0.module",
+        "group": "com.mukeshsolanki.barcodes",
+        "module": "kmp-barcodes-core-android",
+        "version": "0.1.0"
+      }
+    },
+    {
+      "name": "iosArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kmp-barcodes-core-iosarm64/0.1.0/kmp-barcodes-core-iosarm64-0.1.0.module",
+        "group": "com.mukeshsolanki.barcodes",
+        "module": "kmp-barcodes-core-iosarm64",
+        "version": "0.1.0"
+      }
+    },
+    {
+      "name": "iosArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kmp-barcodes-core-iosarm64/0.1.0/kmp-barcodes-core-iosarm64-0.1.0.module",
+        "group": "com.mukeshsolanki.barcodes",
+        "module": "kmp-barcodes-core-iosarm64",
+        "version": "0.1.0"
+      }
+    },
+    {
+      "name": "iosArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kmp-barcodes-core-iosarm64/0.1.0/kmp-barcodes-core-iosarm64-0.1.0.module",
+        "group": "com.mukeshsolanki.barcodes",
+        "module": "kmp-barcodes-core-iosarm64",
+        "version": "0.1.0"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kmp-barcodes-core-iossimulatorarm64/0.1.0/kmp-barcodes-core-iossimulatorarm64-0.1.0.module",
+        "group": "com.mukeshsolanki.barcodes",
+        "module": "kmp-barcodes-core-iossimulatorarm64",
+        "version": "0.1.0"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kmp-barcodes-core-iossimulatorarm64/0.1.0/kmp-barcodes-core-iossimulatorarm64-0.1.0.module",
+        "group": "com.mukeshsolanki.barcodes",
+        "module": "kmp-barcodes-core-iossimulatorarm64",
+        "version": "0.1.0"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kmp-barcodes-core-iossimulatorarm64/0.1.0/kmp-barcodes-core-iossimulatorarm64-0.1.0.module",
+        "group": "com.mukeshsolanki.barcodes",
+        "module": "kmp-barcodes-core-iossimulatorarm64",
+        "version": "0.1.0"
+      }
+    }
+  ]
+}
