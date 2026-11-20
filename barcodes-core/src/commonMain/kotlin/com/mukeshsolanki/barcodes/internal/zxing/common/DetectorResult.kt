@@ -1,0 +1,31 @@
+/*
+ * Copyright 2007 ZXing authors
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ * Ported to Kotlin from zxing 3.5.3 for kmp-barcodes.
+ */
+
+package com.mukeshsolanki.barcodes.internal.zxing.common
+
+import com.mukeshsolanki.barcodes.internal.zxing.ResultPoint
+
+/**
+ * Result of detecting a barcode: the sampled module matrix and points of interest in the image.
+ */
+internal open class DetectorResult(
+    /** Sampled black/white modules of the barcode. */
+    val bits: BitMatrix,
+    /** Points of interest, such as finder patterns or corners. */
+    val points: Array<ResultPoint>,
+)

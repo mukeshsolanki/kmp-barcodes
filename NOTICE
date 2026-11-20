@@ -1,0 +1,11 @@
+kmp-barcodes, Copyright 2026 Mukesh Solanki
+
+Licensed under the Apache License, Version 2.0, see LICENSE.
+
+This product contains code ported to Kotlin from ZXing ("Zebra Crossing"),
+https://github.com/zxing/zxing, version 3.5.3.
+Copyright ZXing authors. Licensed under the Apache License, Version 2.0.
+The ported code lives under
+barcodes-core/src/commonMain/kotlin/com/mukeshsolanki/barcodes/internal/zxing/
+and keeps the original ZXing copyright headers. See licenses/ZXING-NOTICE.txt
+and licenses/SOURCES.txt.

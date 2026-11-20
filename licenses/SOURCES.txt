@@ -1,0 +1,10 @@
+Port source
+
+ZXing core 3.5.3
+Repository: https://github.com/zxing/zxing
+Tag: zxing-3.5.3
+Path: core/src/main/java/com/google/zxing/
+Licence: Apache License 2.0, see ../LICENSE and ZXING-NOTICE.txt
+
+The test suites also depend on the unmodified com.google.zxing:core:3.5.3
+artifact for parity checks. It isn't shipped in the published libraries.
